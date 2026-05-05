@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1777967783570,
+    "description" : "",
+    "identifier" : "Nifi-basic-Uppercase-transformation",
+    "lastModifiedTimestamp" : 1777967783570,
+    "name" : "Nifi basic Uppercase transformation",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
