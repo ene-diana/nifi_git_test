@@ -1,10 +1,5 @@
 {
-  "externalControllerServices" : {
-    "994e721e-e919-35a9-9be1-d5513fb81ce7" : {
-      "identifier" : "994e721e-e919-35a9-9be1-d5513fb81ce7",
-      "name" : "DBCPConnectionPool"
-    }
-  },
+  "externalControllerServices" : { },
   "flow" : {
     "createdTimestamp" : 1777551790282,
     "description" : "",
@@ -445,7 +440,7 @@
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -453,7 +448,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.9.0"
+          "version" : "2.8.0-SNAPSHOT"
         },
         "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
       } ],
@@ -666,9 +661,9 @@
     }, {
       "bulletinLevel" : "WARN",
       "bundle" : {
-        "artifact" : "nifi-record-serialization-services-nar",
+        "artifact" : "nifi-dbcp-service-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -676,7 +671,169 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.9.0"
+          "version" : "2.8.0-SNAPSHOT"
+        },
+        "type" : "org.apache.nifi.dbcp.DBCPService"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "dfad5396-efe0-3686-8026-c544e78b7d9e",
+      "name" : "DBCPConnectionPool",
+      "properties" : {
+        "Maximum Idle Connections" : "8",
+        "Database Driver Locations" : "e:\\Kit-uri\\ApacheNiFi2\\nifi-assembly\\target\\nifi-2.8.0-SNAPSHOT-bin\\nifi-2.8.0-SNAPSHOT\\ojdbc8.jar",
+        "Max Wait Time" : "500 millis",
+        "Database Driver Class Name" : "oracle.jdbc.OracleDriver",
+        "Minimum Idle Connections" : "0",
+        "Max Total Connections" : "8",
+        "Database Connection URL" : "jdbc:oracle:thin:@10.3.1.100:1521:BILL",
+        "Password Source" : "PASSWORD",
+        "Time Between Eviction Runs" : "-1",
+        "Database User" : "V10MAIN",
+        "Soft Minimum Evictable Idle Time" : "-1",
+        "Maximum Connection Lifetime" : "-1",
+        "Minimum Evictable Idle Time" : "30 mins"
+      },
+      "propertyDescriptors" : {
+        "Maximum Idle Connections" : {
+          "displayName" : "Maximum Idle Connections",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Maximum Idle Connections",
+          "sensitive" : false
+        },
+        "Database Driver Locations" : {
+          "displayName" : "Database Driver Locations",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Database Driver Locations",
+          "resourceDefinition" : {
+            "cardinality" : "MULTIPLE",
+            "resourceTypes" : [ "DIRECTORY", "FILE", "URL" ]
+          },
+          "sensitive" : false
+        },
+        "Max Wait Time" : {
+          "displayName" : "Max Wait Time",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Max Wait Time",
+          "sensitive" : false
+        },
+        "Database Driver Class Name" : {
+          "displayName" : "Database Driver Class Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Database Driver Class Name",
+          "sensitive" : false
+        },
+        "Minimum Idle Connections" : {
+          "displayName" : "Minimum Idle Connections",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Minimum Idle Connections",
+          "sensitive" : false
+        },
+        "Kerberos User Service" : {
+          "displayName" : "Kerberos User Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Kerberos User Service",
+          "sensitive" : false
+        },
+        "Max Total Connections" : {
+          "displayName" : "Max Total Connections",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Max Total Connections",
+          "sensitive" : false
+        },
+        "Validation Query" : {
+          "displayName" : "Validation Query",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Validation Query",
+          "sensitive" : false
+        },
+        "Database Password Provider" : {
+          "displayName" : "Database Password Provider",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Database Password Provider",
+          "sensitive" : false
+        },
+        "Database Connection URL" : {
+          "displayName" : "Database Connection URL",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Database Connection URL",
+          "sensitive" : false
+        },
+        "Password Source" : {
+          "displayName" : "Password Source",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Password Source",
+          "sensitive" : false
+        },
+        "Time Between Eviction Runs" : {
+          "displayName" : "Time Between Eviction Runs",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Time Between Eviction Runs",
+          "sensitive" : false
+        },
+        "Database User" : {
+          "displayName" : "Database User",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Database User",
+          "sensitive" : false
+        },
+        "Soft Minimum Evictable Idle Time" : {
+          "displayName" : "Soft Minimum Evictable Idle Time",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Soft Minimum Evictable Idle Time",
+          "sensitive" : false
+        },
+        "Maximum Connection Lifetime" : {
+          "displayName" : "Maximum Connection Lifetime",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Maximum Connection Lifetime",
+          "sensitive" : false
+        },
+        "Minimum Evictable Idle Time" : {
+          "displayName" : "Minimum Evictable Idle Time",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Minimum Evictable Idle Time",
+          "sensitive" : false
+        },
+        "Password" : {
+          "displayName" : "Password",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Password",
+          "sensitive" : true
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "org.apache.nifi.dbcp.DBCPConnectionPool"
+    }, {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-record-serialization-services-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.8.0-SNAPSHOT"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.8.0-SNAPSHOT"
         },
         "type" : "org.apache.nifi.serialization.RecordReaderFactory"
       } ],
@@ -877,12 +1034,7 @@
     "defaultBackPressureObjectThreshold" : 10000,
     "defaultFlowFileExpiration" : "0 sec",
     "executionEngine" : "INHERITED",
-    "externalControllerServiceReferences" : {
-      "994e721e-e919-35a9-9be1-d5513fb81ce7" : {
-        "identifier" : "994e721e-e919-35a9-9be1-d5513fb81ce7",
-        "name" : "DBCPConnectionPool"
-      }
-    },
+    "externalControllerServiceReferences" : { },
     "flowFileConcurrency" : "UNBOUNDED",
     "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
     "funnels" : [ {
@@ -1081,7 +1233,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1154,7 +1306,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1173,7 +1325,7 @@
         "Table Name" : "accountclasstype",
         "Max Wait Time" : "0 seconds",
         "Normalize Table/Column Names" : "false",
-        "Database Connection Pooling Service" : "994e721e-e919-35a9-9be1-d5513fb81ce7",
+        "Database Connection Pooling Service" : "dfad5396-efe0-3686-8026-c544e78b7d9e",
         "Default Decimal Scale" : "0",
         "Initial Load Strategy" : "Start at Beginning",
         "Fetch Size" : "0",
@@ -1343,7 +1495,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1365,7 +1517,7 @@
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "Rollback On Failure" : "false",
-        "JDBC Connection Pool" : "994e721e-e919-35a9-9be1-d5513fb81ce7"
+        "JDBC Connection Pool" : "dfad5396-efe0-3686-8026-c544e78b7d9e"
       },
       "propertyDescriptors" : {
         "SQL Statement" : {
@@ -1441,7 +1593,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1569,7 +1721,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1588,7 +1740,7 @@
         "Table Name" : "accounts",
         "Max Wait Time" : "0 seconds",
         "Partition Size" : "10000",
-        "Database Connection Pooling Service" : "994e721e-e919-35a9-9be1-d5513fb81ce7",
+        "Database Connection Pooling Service" : "dfad5396-efe0-3686-8026-c544e78b7d9e",
         "Database Type" : "Oracle 12+",
         "Output Empty FlowFile on Zero Results" : "false",
         "Column for Value Partitioning" : "id"
@@ -1695,7 +1847,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1714,7 +1866,7 @@
         "Table Name" : "EMPLOYEE",
         "Quote Column Identifiers" : "false",
         "Max Wait Time" : "0 seconds",
-        "Database Connection Pooling Service" : "994e721e-e919-35a9-9be1-d5513fb81ce7",
+        "Database Connection Pooling Service" : "dfad5396-efe0-3686-8026-c544e78b7d9e",
         "Record Reader" : "e3e9d459-e56c-3f80-b78e-dbffcc37ec4e",
         "Quote Table Identifiers" : "false",
         "Database Session AutoCommit" : "false",
@@ -1952,7 +2104,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1972,7 +2124,7 @@
         "Max Wait Time" : "0 seconds",
         "SQL Query" : "select * from accountclasstype",
         "Normalize Table/Column Names" : "false",
-        "Database Connection Pooling Service" : "994e721e-e919-35a9-9be1-d5513fb81ce7",
+        "Database Connection Pooling Service" : "dfad5396-efe0-3686-8026-c544e78b7d9e",
         "Default Decimal Scale" : "0",
         "Fetch Size" : "0",
         "Output Batch Size" : "0",
@@ -2097,7 +2249,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2116,7 +2268,7 @@
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
         "SQL Query" : "select * from accountclasstype",
-        "Database Connection Pooling Service" : "994e721e-e919-35a9-9be1-d5513fb81ce7",
+        "Database Connection Pooling Service" : "dfad5396-efe0-3686-8026-c544e78b7d9e",
         "Default Decimal Scale" : "0",
         "Fetch Size" : "0",
         "Output Batch Size" : "0",
@@ -2250,7 +2402,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2378,7 +2530,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2396,7 +2548,7 @@
       "properties" : {
         "Table Name" : "accountclasstype",
         "Max Wait Time" : "0 seconds",
-        "Database Connection Pooling Service" : "994e721e-e919-35a9-9be1-d5513fb81ce7",
+        "Database Connection Pooling Service" : "dfad5396-efe0-3686-8026-c544e78b7d9e",
         "Default Decimal Scale" : "0",
         "Maximum-value Columns" : "ID",
         "Initial Load Strategy" : "Start at Beginning",
@@ -2567,7 +2719,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2749,8 +2901,8 @@
   "parameterContexts" : { },
   "parameterProviders" : { },
   "snapshotMetadata" : {
-    "author" : "10aa55d6-166c-4543-b23a-bbfa1b82ab27",
+    "author" : "mind",
     "flowIdentifier" : "DatabaseProcessorsExamples",
-    "timestamp" : 1777551791334
+    "timestamp" : 1777968930220
   }
 }
