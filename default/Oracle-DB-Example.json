@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1777967803619,
+    "description" : "",
+    "identifier" : "Oracle-DB-Example",
+    "lastModifiedTimestamp" : 1777967803619,
+    "name" : "Oracle DB Example",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
