@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1777967639442,
+    "description" : "",
+    "identifier" : "Data-enrichment-example",
+    "lastModifiedTimestamp" : 1777967639442,
+    "name" : "Data enrichment example",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
