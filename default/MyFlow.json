@@ -101,7 +101,7 @@
       "bundle" : {
         "artifact" : "nifi-database-dialect-service-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -109,7 +109,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.9.0"
+          "version" : "2.8.0-SNAPSHOT"
         },
         "type" : "org.apache.nifi.database.dialect.service.api.DatabaseDialectService"
       } ],
@@ -135,7 +135,7 @@
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -143,7 +143,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.9.0"
+          "version" : "2.8.0-SNAPSHOT"
         },
         "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
       } ],
@@ -358,7 +358,7 @@
       "bundle" : {
         "artifact" : "nifi-dbcp-service-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -366,7 +366,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.9.0"
+          "version" : "2.8.0-SNAPSHOT"
         },
         "type" : "org.apache.nifi.dbcp.DBCPService"
       } ],
@@ -375,7 +375,7 @@
       "name" : "Oracle BILL DB",
       "properties" : {
         "Maximum Idle Connections" : "8",
-        "Database Driver Locations" : "e:\\Kit-uri\\nifi-2.9.0\\ojdbc8.jar",
+        "Database Driver Locations" : "e:\\Kit-uri\\ApacheNiFi2\\nifi-assembly\\target\\nifi-2.8.0-SNAPSHOT-bin\\nifi-2.8.0-SNAPSHOT\\ojdbc8.jar",
         "Max Wait Time" : "500 millis",
         "Database Driver Class Name" : "oracle.jdbc.OracleDriver",
         "Minimum Idle Connections" : "0",
@@ -520,7 +520,7 @@
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -528,7 +528,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.9.0"
+          "version" : "2.8.0-SNAPSHOT"
         },
         "type" : "org.apache.nifi.serialization.RecordReaderFactory"
       } ],
@@ -751,7 +751,7 @@
       "bundle" : {
         "artifact" : "nifi-update-attribute-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -824,7 +824,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1081,7 +1081,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1209,7 +1209,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1303,7 +1303,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.9.0"
+        "version" : "2.8.0-SNAPSHOT"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1498,8 +1498,8 @@
   "parameterContexts" : { },
   "parameterProviders" : { },
   "snapshotMetadata" : {
-    "author" : "10aa55d6-166c-4543-b23a-bbfa1b82ab27",
+    "author" : "mind",
     "flowIdentifier" : "MyFlow",
-    "timestamp" : 1777464558409
+    "timestamp" : 1777968916007
   }
 }
