@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1777967694438,
+    "description" : "",
+    "identifier" : "Nifi-partition-Example",
+    "lastModifiedTimestamp" : 1777967694438,
+    "name" : "Nifi partition Example",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
